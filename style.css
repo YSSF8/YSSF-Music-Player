@@ -204,12 +204,6 @@ br::selection {
     background: rgb(139, 34, 43);
 }
 
-@media (max-width: 1026px) {
-    .subscribe {
-        right: 30rem;
-    }
-}
-
 @media (max-width: 1359px) {
     .subscribe {
         display: none;
