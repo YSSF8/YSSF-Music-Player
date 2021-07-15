@@ -1,0 +1,222 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: Selawik;
+}
+
+html {
+    cursor: url(img/cursor/default.png), auto;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: url(img/cursor/pointer.png), auto;
+}
+
+header {
+    background: #1e1e1e;
+    padding-top: 17px;
+    height: 5.4rem;
+    width: 101%;
+    margin: -1rem -.6rem;
+}
+
+.icon {
+    background-image: url("img/icon\,\ favicon.ico");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    height: 100px;
+    margin-left: 2rem;
+    content: "";
+    display: block;
+}
+
+.txt-icon::before {
+    content: "YSSF Music Player";
+    position: absolute;
+    top: 1.8rem;
+    left: 7.5rem;
+    visibility: visible;
+}
+
+.subscribe {
+    border-radius: 20%;
+    top: 2rem;
+    right: 40rem;
+    background: #f00;
+    width: 4rem;
+    height: 2vw;
+    position: absolute;
+}
+
+.subscribe::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    transform: translateX(130%) translateY(30%);
+    border-top: 10px solid transparent;
+    border-left: 17px solid #fff;
+    border-bottom: 10px solid transparent;
+    transition: .3s;
+}
+
+.subscribe::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(30%);
+    border-top: 10px solid transparent;
+    border-left: 17px solid #fff;
+    border-bottom: 10px solid transparent;
+    transition: .3s;
+}
+
+.subscribe:hover::after {
+    transform: translateX(200%) translateY(30%);
+    opacity: 0;
+}
+
+.subscribe:hover::before {
+    transform: translateX(135%) translateY(30%);
+    opacity: 1;
+}
+
+.download {
+    background: rgb(185, 46, 58);
+    color: #fff;
+    text-decoration: none;
+    width: 7rem;
+    height: 2rem;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 6px;
+    right: 20px;
+    top: 2.2rem;
+    font-family: Selawik;
+    position: absolute;
+}
+
+.download:hover {
+    background: rgb(139, 34, 43);
+}
+
+.url {
+    text-decoration: none;
+    color: rgb(185, 46, 58);
+}
+
+.screenshots {
+    position: absolute;
+    left: 24.5%;
+}
+
+.arrow {
+    font-size: 30px;
+    position: absolute;
+    margin-top: 20rem;
+    cursor: pointer;
+    opacity: .6;
+    transition: .4s;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+._music-BG_ {
+    border-radius: 8px;
+    background: #1e1e1e;
+    height: 31.5rem;
+    width: 15vw;
+}
+
+.open-infs {
+    border-radius: 8px;
+    background: #1e1e1e;
+    width: 13rem;
+    padding: 2px 10px;
+    display: none;
+}
+
+.infs-toggle {
+    display: block !important;
+}
+
+.inf-arrow {
+    transform: rotate(180deg);
+}
+
+footer {
+    background: #1e1e1e;
+    width: 101%;
+    height: 4rem;
+    text-align: center;
+    margin-left: -.6rem;
+    margin-bottom: -10px;
+}
+
+.copyright {
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    color: #bbb;
+}
+
+.to-top {
+    border-radius: 100px;
+    position: fixed;
+    right: 25px;
+    bottom: -60px;
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .7);
+    background: rgb(185, 46, 58);
+    transition: .3s;
+}
+
+.to-top:hover {
+    background: rgb(139, 34, 43);
+}
+
+br::selection {
+    background: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: rgb(185, 46, 58);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(139, 34, 43);
+}
+
+@media (max-width: 1026px) {
+    .subscribe {
+        right: 30rem;
+    }
+}
+
+@media (max-width: 1359px) {
+    .subscribe {
+        display: none;
+    }
+}
+
+@font-face {
+    src: url("selawk.ttf");
+    font-family: "Selawik";
+}
