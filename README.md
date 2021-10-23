@@ -38,4 +38,4 @@ Platform: Windows
 Author: YSSF
 
 ---
-<a href="https://yssf8.github.io/YSSF-Music-Player/">Download YSSF Music Player v2.1-Beta</a>
+<a href="https://yssf8.github.io/YSSF-Music-Player/">Download YSSF Music Player v2.3-Beta</a>
